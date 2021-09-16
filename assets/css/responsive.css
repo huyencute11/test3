@@ -1,0 +1,97 @@
+/* ---------------RESPONSIVE------------------- */
+/* media and tablet */
+@media (max-width: 1023px) {
+  :root {
+    --header-preview-height: 0;
+    --header-main-height: 83px;
+  }
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+  .main__header {
+    height: var(--header-main-height);
+    margin-top: var(--header-preview-height);
+  }
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none;
+  }
+  .all-features {
+    padding: 100px 0 0;
+  }
+  .feature__item-content {
+    width: 50%;
+  }
+  .all-supports {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/* media */
+@media (max-width: 739px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  /* thanh main navar và menu */
+  .main__header {
+  }
+  .main__header-navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+  }
+  .navbar__list {
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    top: var(--header-main-height);
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  .navbar__list li a {
+    display: block;
+    margin: 0;
+    border: unset;
+    border-radius: unset;
+    color: #cfcfcf;
+  }
+  .navbar__list .current a {
+    background-color: unset;
+  }
+  #nav li:nth-child(4) a {
+    background: unset;
+    color: #cfcfcf;
+  }
+  #nav li:nth-child(1):hover a,
+  #nav li:nth-child(2):hover a,
+  #nav li:nth-child(3):hover a {
+    color: rgba(35, 197, 115, 1) 30%;
+    background-color: unset;
+  }
+  .mobile-menu-btn {
+    display: block;
+  }
+  /* phần đềmô */
+  .content__demo-item {
+    width: 100%;
+  }
+  /* features */
+  .all-features {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .feature__item-content {
+    width: 100%;
+  }
+  /* support */
+  .all-supports {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .supports__item {
+    width: 100%;
+  }
+}
